@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Family| Dustin Berry</title>
+      <link rel="stylesheet" href="style5.css">
+   </head>
+   <body>
+      <div class="content">
+         <div class="images">
+            <img src="Dustin1.jpg">
+            <img src="Dustin2.jpg">
+            <img src="Dustin3.jpg">
+            <img src="Dustin4.jpg">
+            <img src="Dustin5.jpg">
+            <img src="Dustin6.jpg">
+            <img src="Dustin7.jpg">
+            <img src="Dustin8.jpg">
+            <img src="Dustin9.jpg">
+            <img src="Dustin10.jpg">
+            <img src="Dustin11.jpg">
+            <img src="Dustin12.jpg">
+            <img src="Dustin.13.jpg">
+            <img src="Dustin14.jpg">
+            <img src="Dustin16.jpg">
+            <img src="Dustin17.jpg">
+            <img src="Dustin18.jpg">
+            <img src="Dustin19.jpg">
+            <img src="Dustin20.jpg">
+            
+            <img src="Dustin27.jpg">
+            
+            
+
+         </div>
+      </div>
+      <script>
+         var indexValue = 0;
+         function slideShow(){
+           setTimeout(slideShow, 2500);
+           var x;
+           const img = document.querySelectorAll("img");
+           for(x = 0; x < img.length; x++){
+             img[x].style.display = "none";
+           }
+           indexValue++;
+           if(indexValue > img.length){indexValue = 1}
+           img[indexValue -1].style.display = "block";
+         }
+         slideShow();
+      </script>
+      <div class="clock">
+        <div class="display">
+  </div>
+  </div>
+  <script>
+        setInterval(function(){
+          const clock = document.querySelector(".display");
+          let time = new Date();
+          let sec = time.getSeconds();
+          let min = time.getMinutes();
+          let hr = time.getHours();
+          let day = 'AM';
+          if(hr > 12){
+            day = 'PM';
+            hr = hr - 12;
+          }
+          if(hr == 0){
+            hr = 12;
+          }
+          if(sec < 10){
+            sec = '0' + sec;
+          }
+          if(min < 10){
+            min = '0' + min;
+          }
+          if(hr < 10){
+            hr = '0' + hr;
+          }
+          clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+        });
+      </script>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <div class="wrapper">
+        <div class="text">
+           BERRY'S
+        </div>
+        <p>
+           FAMILY
+        </p>
+        <div class="btns">
+           <a href="..//index4/index4.html">BACK</a>
+           <a href="..//index6/index6.html">NEXT</a>
+        </div>
+     </div>
+     <script>
+        const buttons = document.querySelectorAll("a");
+        buttons.forEach((button) => {
+          button.onclick = function(e){
+            let x = e.clientX - e.target.offsetLeft;
+            let y = e.clientY - e.target.offsetTop;
+            let ripple = document.createElement("span");
+            ripple.style.left = `${x}px`;
+            ripple.style.top = `${y}px`;
+            this.appendChild(ripple);
+            setTimeout(function(){
+              ripple.remove();
+            }, 600); // 1second = 1000ms
+          }
+        });
+        
+     </script>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+        
+          
+        
+       
+        
+        
+       
+       <audio controls autoplay>
+           <source src="Why Can't We Be Friends_.mp3" type="audio/mp3"> 
+       </audio>
+   </body>
+</html>

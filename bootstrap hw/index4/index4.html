@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experinces| Dustin Berry</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <meta charset="utf-8">
+      <title>Experinces</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="text">
+           
+         </div>
+         <p>My Experinces
+           
+         </p>
+         <div class="btns">
+            <a href="..//index2.html">Back</a>
+            <a href="..//index5/index5.html">Next</a>
+         </div>
+      </div>
+      <script>
+         const buttons = document.querySelectorAll("a");
+         buttons.forEach((button) => {
+           button.onclick = function(e){
+             let x = e.clientX - e.target.offsetLeft;
+             let y = e.clientY - e.target.offsetTop;
+             let ripple = document.createElement("span");
+             ripple.style.left = `${x}px`;
+             ripple.style.top = `${y}px`;
+             this.appendChild(ripple);
+             setTimeout(function(){
+               ripple.remove();
+             }, 600); // 1second = 1000ms
+           }
+         });
+         
+      </script>
+  <div class="wrapper">
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p>I have work for Uber eats since 2017 till 2019. I have diliverd food to customers by using this application from this company,and i make 80 buck per day its not bad.</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Dustin Berry</div>
+          <div class="job">Uber Eats | Dilivery</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="uber eats.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p>I have work for a Thai resteraunt in USA called Thai village, rim tanon and yet i work for an indian resteraunt also.</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Dustin Berry</div>
+          <div class="job">waiter| dishwasher</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="rim tanon.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-quote-left  quote"></i>
+      <p>I work for raod contruction for a year then i came back to college.I went to work at knongkai I build roads.</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Dustin Berry</div>
+          <div class="job">contruction site | road constrcution</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="road.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

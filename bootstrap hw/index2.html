@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Dustin Berry -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Sidebar Menu with sub-menu | Dustin Berry Portfolio</title>
+      <link rel="stylesheet" href="style2.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="../bootstrap hw/index3/index3.html">
+   </head>
+   <body>
+      <div class="btn">
+         <span class="fas fa-bars"></span>
+      </div>
+      <nav class="sidebar">
+         <div class="text">
+            Side Menu
+         </div>
+         <ul>
+            <li class="active"><a href="/index.html">First Page</a></li>
+            <li>
+               <a href="#" class="feat-btn">
+              
+            </li>
+            <li>
+               
+            </li>
+            <li><a href="./index3/index3.html">About Me</a></li>
+            <li><a href="./index4/index4.html">Experinces</a></li>
+            <li><a href="index5/index5.html">Family</a></li>
+            <li><a href="./index6/index6.html">Education</a></li>
+         </ul>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="wrapper">
+         <div class="box">
+            <div class="front-face">
+               <div class="icon">
+                  <i class="fas fa-code"></i>
+               </div>
+               <span>about me</span>
+            </div>
+            <div class="back-face">
+               <span>about Me</span>
+               <p>
+                  My name is Dustin Berry. I was born in Chicago USA now I am 25 years old , and I am half Thai half USA.
+               </p>
+            </div>
+         </div>
+         <div class="box">
+            <div class="front-face">
+               <div class="icon">
+                  <i class="fas fa-chart-line"></i>
+               </div>
+               <span>skills</span>
+            </div>
+            <div class="back-face">
+               <span>improving skills</span>
+               <p>
+                 i wish to improve my math skills and my coding skill , so I can gradute and fly back to the States and try to get a job at silicon valley.
+               </p>
+            </div>
+         </div>
+         <div class="box">
+            <div class="front-face">
+               <div class="icon">
+                  <i class="fas fa-rocket"></i>
+               </div>
+               <span>Game</span>
+            </div>
+            <div class="back-face">
+               <span>Games</span>
+               <p>
+                 I love to play valorant because the game makes me relax and come,and it helps me to find something to do in my free time.
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="content">
+         <div class="header">
+           
+         </div>
+         <p>
+            
+         </p>
+      </div>
+      <script>
+         $('.btn').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+         });
+           $('.feat-btn').click(function(){
+             $('nav ul .feat-show').toggleClass("show");
+             $('nav ul .first').toggleClass("rotate");
+           });
+           $('.serv-btn').click(function(){
+             $('nav ul .serv-show').toggleClass("show1");
+             $('nav ul .second').toggleClass("rotate");
+           });
+           $('nav ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+      </script>
+   </body>
+</html>
